@@ -23,7 +23,6 @@ import {
 
 import TimerEnhance from 'react-native-smart-timer-enhance'
 
-const {width: deviceWidth, height: deviceHeight,} = Dimensions.get('window')
 const styles = StyleSheet.create({
     overlay: {
         position: 'absolute',
@@ -83,6 +82,7 @@ class LoadingSpinnerOverlay extends Component {
     }
     
     _renderOverLay(loadingSpinner) {
+        let {width: deviceWidth, height: deviceHeight,} = Dimensions.get('window')
         return (
             this.state.modal ?
                 (this.state.marginTop === 0 ?
@@ -190,6 +190,7 @@ class LoadingSpinnerOverlay extends Component {
         if(!this._loadingSpinnerWidth || !this._loadingSpinnerHeight) {
             return
         }
+        let {width: deviceWidth, height: deviceHeight,} = Dimensions.get('window')
         let left = (deviceWidth - this._loadingSpinnerWidth) / 2
         let top =  (deviceHeight - this._loadingSpinnerHeight) / 2 - (modal && marginTop === 0 ? 0 : marginTop)
         this._container.setNativeProps({
