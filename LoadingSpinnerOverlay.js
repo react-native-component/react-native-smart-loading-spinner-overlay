@@ -6,8 +6,8 @@
  */
 
 import React, {
-    Component,
-    PropTypes,
+    Component
+    
 } from 'react'
 import {
     View,
@@ -20,7 +20,7 @@ import {
     ActivityIndicatorIOS,
     ProgressBarAndroid,
 } from 'react-native'
-
+import PropTypes from 'prop-types'
 import TimerEnhance from 'react-native-smart-timer-enhance'
 
 const styles = StyleSheet.create({
