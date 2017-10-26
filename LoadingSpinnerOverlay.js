@@ -6,8 +6,8 @@
  */
 
 import React, {
-    Component,
-    PropTypes,
+    Component
+    
 } from 'react'
 import {
     View,
@@ -19,8 +19,9 @@ import {
     ActivityIndicator,
     ActivityIndicatorIOS,
     ProgressBarAndroid,
+    ViewPropTypes
 } from 'react-native'
-
+import PropTypes from 'prop-types'
 import TimerEnhance from 'react-native-smart-timer-enhance'
 
 const styles = StyleSheet.create({
@@ -52,8 +53,8 @@ class LoadingSpinnerOverlay extends Component {
     }
 
     static propTypes = {
-        overlayStyle: View.propTypes.style,
-        style: View.propTypes.style,
+        overlayStyle: ViewPropTypes.style,
+        style: ViewPropTypes.style,
         duration: PropTypes.number,
         delay: PropTypes.number,
         marginTop: PropTypes.number,
