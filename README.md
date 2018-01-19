@@ -41,7 +41,7 @@ import {
 
 import Button from 'react-native-smart-button'
 import TimerEnhance from 'react-native-smart-timer-enhance'
-import Toast from 'react-native-smart-loading-spinner-overlay'
+import LoadingSpinnerOverlay from 'react-native-smart-loading-spinner-overlay'
 
 class LoadingSpinnerOverLayDemo extends Component {
 
