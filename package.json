@@ -1,6 +1,6 @@
 {
   "name": "@react-native-component/react-native-smart-loading-spinner-overlay",
-  "version": "1.0.2",
+  "version": "1.0.2.1",
   "description": "A smart loading spinner overlay for React Native apps, written in JS for cross-platform support. It works on iOS and Android.",
   "main": "LoadingSpinnerOverlay.js",
   "scripts": {
